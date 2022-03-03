@@ -5,7 +5,7 @@ TP Audit de code PHP
  
 > **En règle générale, quels sont les points d'entrée vers le code d'une application web ?**  
 Les points d'entrée principaux d'une application web sont dans le fichier `fichier.xml` et dans les requêtes pour transmettre des paramètres à l'application web (`GET`, `POST`, `REQUEST`, etc.)  
-Nom de l'étape : `Ground Zero`
+**Nom de l'étape :** `Ground Zero`
 
 ```python3
 from collections import defaultdict
