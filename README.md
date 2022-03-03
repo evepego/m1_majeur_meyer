@@ -2,10 +2,12 @@
 TP Audit de code PHP
 
 ## Recherche des points d'entrées de l'application :
+> [!Question]
 > **En règle générale, quels sont les points d'entrée vers le code d'une application web ?**  
 Les points d'entrée principaux d'une application web sont dans le fichier `fichier.xml` et dans les requêtes pour transmettre des paramètres à l'application web (`GET`, `POST`, `REQUEST`)
 
-Nom de l'étape : `Ground Zero`
+> [!Important]
+> Nom de l'étape : `Ground Zero`
 
 ```python3
 from collections import defaultdict
@@ -13,7 +15,7 @@ import glob
 from itertools import count
 from unittest import result
 
-
+* 
 http_requests = ['$_GET', '$_POST', '$_REQUEST']
 
 dir = ['./wp-mobile-detector/*.php', './wp-mobile-detector/*/*.php', './wp-mobile-detector/*/*/*.php', './wp-mobile-detector/*/*/*/*.php', './wp-mobile-detector/*/*/*/*/*.php', './wp-mobile-detector/*/*/*/*/*/*.php']
@@ -34,3 +36,4 @@ def occurence1(string_list):
 
 print(occurence1(http_requests), count)
 ```
+
