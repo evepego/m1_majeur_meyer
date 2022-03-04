@@ -13,13 +13,13 @@ def occurence1(string_list):
     count = 0
     for d in dir:
         for file_name in glob.iglob(d):
-            print(file_name)
             with open(file_name) as input_file:
                 for line in input_file:
                     for s in string_list:
                         if s in line:
                             results[s] += 1
                             count += 1
+                            print(file_name)
     return results, count
 
 print(occurence1(http_requests), count)
